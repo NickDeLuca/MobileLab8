@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WebBrowser</string>
+    <string name="button">Go</string>
+    <string name="editText">URL</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="newTab">New</string>
+
+
+</resources>

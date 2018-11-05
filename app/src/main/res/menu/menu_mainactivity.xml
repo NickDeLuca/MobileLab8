@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/newTab"
+        android:title="@string/newTab"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/backTab"
+        android:title="@string/back"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nextTab"
+        android:title="@string/next"
+        app:showAsAction="always" />
+</menu>

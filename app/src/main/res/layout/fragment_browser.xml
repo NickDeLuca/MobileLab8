@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BrowserFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="194dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/editText"
+            android:inputType="textUri" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="44dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="-4dp"
+            android:text="@string/button" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="61dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="-6dp"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_marginStart="-6dp"
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:text="@string/next" />
+    </TableRow>
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
