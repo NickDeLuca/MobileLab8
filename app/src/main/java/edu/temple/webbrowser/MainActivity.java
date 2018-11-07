@@ -47,21 +47,28 @@ public class MainActivity extends AppCompatActivity implements BrowserFragment.B
         tabs = new TabAdapter(fm, urls);
         vp.setAdapter(tabs);
 
+        BrowserFragment bf;
+        if(getIntent().getData() != null){
+            bf = BrowserFragment.newInstance(getIntent().getData().toString());
+            fragments.add(bf);
+            urls.add(getIntent().getData().toString());
+            tabs.notifyDataSetChanged();
+        }
+        else{
+            bf = BrowserFragment.newInstance(firstURL);
+            fragments.add(bf);
+            urls.add(firstURL);
+            tabs.notifyDataSetChanged();
+        }
 
 
 
-        BrowserFragment bf = BrowserFragment.newInstance(firstURL);
-        fragments.add(bf);
-        urls.add(firstURL);
-        tabs.notifyDataSetChanged();
 
 
         fm
             .beginTransaction()
             .replace(R.id.container, bf)
             .commit();
-
-
 
     }
 
